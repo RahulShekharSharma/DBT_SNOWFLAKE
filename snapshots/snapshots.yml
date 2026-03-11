@@ -1,0 +1,19 @@
+version: 2
+
+snapshots:
+  - name: snap_member_tier_history
+    description: "Historical record of member tier changes over time using dbt snapshots."
+    columns:
+      - name: member_id
+        tests:
+          - not_null
+      - name: membership_tier
+        tests:
+          - not_null
+      - name: dbt_valid_from
+        tests:
+          - not_null
+      - name: dbt_scd_id
+        tests:
+          - not_null
+          - unique

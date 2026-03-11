@@ -14,7 +14,10 @@ models:
       - name: membership_tier
         tests:
           - not_null
-
+      - name: tier_effective_from
+        tests:
+          - not_null
+          
   - name: stg_bookings
     description: "Standardized bookings with extras parsed into Snowflake VARIANT."
     columns:
