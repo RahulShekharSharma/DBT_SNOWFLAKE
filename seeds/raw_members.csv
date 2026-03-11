@@ -1,0 +1,7 @@
+member_id,email,join_date,membership_tier,renewal_price_aud,qff_extra_flag,updated_at
+1001,amelia@example.com,2025-01-05,CLUB_JETSTAR_BASE,65,false,2026-03-01 08:00:00
+1002,liam@example.com,2024-11-18,CLUB_JETSTAR_QFF_EXTRA,199,true,2026-03-01 08:00:00
+1003,noah@example.com,2025-06-22,CLUB_JETSTAR_BASE,65,false,2026-03-01 08:00:00
+1004,olivia@example.com,2024-09-09,CLUB_JETSTAR_QFF_EXTRA,199,true,2026-03-01 08:00:00
+1005,ava@example.com,2024-08-14,CLUB_JETSTAR_QFF_EXTRA,199,true,2026-03-01 08:00:00
+1006,ethan@example.com,2025-12-10,CLUB_JETSTAR_BASE,65,false,2026-03-01 08:00:00

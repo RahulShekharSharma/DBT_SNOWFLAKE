@@ -1,0 +1,9 @@
+booking_id,member_id,flight_date,route_type,fare_type,base_fare_aud,flight_extras_json,booking_status,updated_at
+B001,1001,2026-01-15,DOMESTIC,FLEX,180,"[{""extra_type"":""seat"",""amount"":18},{""extra_type"":""bag"",""amount"":35}]",CONFIRMED,2026-01-15 09:30:00
+B002,1002,2026-02-01,INTERNATIONAL,BUSINESS,650,"[{""extra_type"":""bundle"",""amount"":120},{""extra_type"":""meal"",""amount"":22}]",CONFIRMED,2026-02-01 10:10:00
+B003,1002,2026-02-20,DOMESTIC,STARTER,110,"[{""extra_type"":""seat"",""amount"":14}]",CONFIRMED,2026-02-20 07:45:00
+B004,1003,2026-01-09,DOMESTIC,STARTER,95,"[{""extra_type"":""bag"",""amount"":30}]",CONFIRMED,2026-01-09 14:20:00
+B005,1004,2025-12-12,INTERNATIONAL,FLEX,480,"[{""extra_type"":""bundle"",""amount"":95},{""extra_type"":""seat"",""amount"":25}]",CONFIRMED,2025-12-12 18:00:00
+B006,1005,2025-10-20,INTERNATIONAL,BUSINESS,710,"[{""extra_type"":""bundle"",""amount"":130},{""extra_type"":""bag"",""amount"":40}]",CONFIRMED,2025-10-20 12:00:00
+B007,1005,2025-11-02,DOMESTIC,FLEX,160,"[{""extra_type"":""seat"",""amount"":16},{""extra_type"":""bag"",""amount"":28}]",CONFIRMED,2025-11-02 08:00:00
+B008,1006,2026-02-25,DOMESTIC,FLEX,175,"[{""extra_type"":""bundle"",""amount"":90}]",CONFIRMED,2026-02-25 16:10:00

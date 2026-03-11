@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: stg_members
+    description: "Standardized member records for Club Jetstar analytics."
+    columns:
+      - name: member_id
+        tests:
+          - not_null
+          - unique
+      - name: email
+        tests:
+          - not_null
+      - name: membership_tier
+        tests:
+          - not_null
+
+  - name: stg_bookings
+    description: "Standardized bookings with extras parsed into Snowflake VARIANT."
+    columns:
+      - name: booking_id
+        tests:
+          - not_null
+          - unique
+      - name: member_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_members')
+              field: member_id
+      - name: flight_date
+        tests:
+          - not_null
+      - name: flight_extras
+        tests:
+          - not_null
+
+  - name: stg_interactions
+    description: "Standardized customer digital interaction events."
+    columns:
+      - name: interaction_id
+        tests:
+          - not_null
+          - unique
+      - name: member_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_members')
+              field: member_id
