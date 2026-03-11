@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: int_booking_extras
+    description: "One row per booking extra item, exploded from the Snowflake VARIANT payload."
+    columns:
+      - name: booking_id
+        tests:
+          - not_null
+      - name: extra_type
+        tests:
+          - not_null
+      - name: extra_amount_aud
+        tests:
+          - not_null
+
+  - name: int_booking_value_rollup
+    description: "Booking-level rollup of ancillary revenue, extra mix, and total booking value."
+    columns:
+      - name: booking_id
+        tests:
+          - not_null
+          - unique
+      - name: total_booking_value_aud
+        tests:
+          - not_null
